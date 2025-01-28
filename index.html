@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Service</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/all.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <!---This a png file for the header logo----------->
+        <div class="logo">
+            <img src="/logo.png" alt="logo">
+            <p>Post Service</p>
+        </div>
+
+        <!---Links for the header---------->
+        <ul>
+            <a href="#"><li>Track shipment</li></a>
+            <a href="#"><li>Find location</li></a>
+            <a href="mailto:consultant.postservice@gmail.com"><li>Help</li></a>
+            <a href="mailto:consultant.postservice@gmail.com"><li>Contact</li></a>
+        </ul>
+
+        <!---Link to add a track now button to the button--------->
+        <a class="header-track-btn" href="">Track Now</a>
+    </nav>
+
+    <section class="tracking_container">
+        <div class="choose-user">
+            <div class="col1">
+                <h3>Track a Parcel</h3>
+                <p>English/United State</p>
+            </div>
+    
+            <div class="col2">
+                <div class="im-user using" id="imUser" onclick="userUsing(this)">
+                    <i class="fas fa-sign-out"></i>
+                    <p>I'm the sender</p>
+                </div>
+                <div class="im-user" id="imUser" onclick="userUsing(this)">
+                    <i class="fas fa-sign-in"></i>
+                    <p>I'm the reciever</p>
+                </div>
+            </div>
+
+            <div class="col3">
+                <p>Please enter you 10 digit tracking number.</p>
+            </div>
+            
+            <div class="col4">
+                <input type="text" id="userInput" placeholder="___-___-____" maxlength="10" minlength="10">
+            </div>
+
+            <div id="parcelMessage" class="parcel-message" >
+                <div class="parcel-poistion">
+                    <div class="track-point point1">
+                        <i class="fas fa-file-text"></i>
+                        <span>Processing</span>
+                    </div>
+                    <div class="track-bar bar1"></div>
+                    <div class="track-point point2">
+                        <i class="fas fa-cube"></i>
+                        <span>Shipped</span>
+                    </div>
+                    <div class="track-bar bar2"></div>
+                    <div class="track-point point3">
+                        <i class="fas fa-truck"></i>
+                        <span>In transit</span>
+                    </div>
+                    <div class="track-bar bar3"></div> 
+                    <div class="track-point point4">
+                        <i class="fas fa-home"></i>
+                        <span>Delivered</span>
+                    </div>
+                </div>
+                <div class="parcel-note">
+                    <p>Your parcel has been processed and is being prepared for shipment. We’ll notify you once it’s on the way!</p>
+                </div>
+                
+            </div>
+            <div id="errorNote" class="error-note">
+                    <p>Incorrect tracking number! Please try again or contact Agent.</p>
+                </div>
+
+            
+
+            <div class="col5">
+                <button id="submitButton">Continue</button>
+            </div>
+
+            <div class="col6">
+                <a href=""><p>Don't know the tracking number?</p></a>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="col1">
+            <div class="useful-link">
+                <a href="">Ship Now</a>
+                <a href="">Find Location</a>
+                <a href="">International</a>
+                <a href="">Agent</a>
+            </div>
+            <div class="socials">
+                <i class="fab fa-g"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="col foot-logo">
+                <img src="/logo.png">
+                <p>Post Service</p>
+            </div>
+
+            <div class="col useful-link-p">
+                <h3>Useful Links</h3>
+                <p>Team</p>
+                <p>Partner</p>
+                <p>How To Ship</p>
+                <p>Get Quote</p>
+            </div>
+
+            <div class="col-for-sub">
+                <h3>Subscribe for News letter</h3>
+                <p>Don’t miss Post Service Int latest news and events. Subscribe to our newsletter channel and be informed.</p>
+                <div class="sub-area">
+                    <input type="email id="sub">
+                    <label for="sub">Subscribe</label>
+                </div>
+            </div>
+        </div>
+        <div class="col3">
+            <span>&copy; 2025 Post Service Int. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+
+</body>
+</html>
