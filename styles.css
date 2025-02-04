@@ -252,7 +252,7 @@ nav ul a {
     border-radius: 5px;
 }
 /*--I used this to controll the progress of the parcel---*/
-.track-point.point1, .track-point.point2{
+.track-point.point1, .track-point.point2, .track-point.point3{
     background: #0f52bf;
 }
 .track-bar.bar1, .track-bar.bar2{
